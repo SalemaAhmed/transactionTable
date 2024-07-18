@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family :Verdana, Geneva, Tahoma, sans-serif
+}
 .card {
     border-radius: 10px;
     overflow: hidden;
@@ -9,6 +13,9 @@
   .bg-success {
     --bs-bg-opacity: 1;
     background-color: rgb(104 159 56) !important;
+}
+button{
+    border-radius: 5px;
 }
   .input-wrapper .p-inputnumber {
     width: 100%;

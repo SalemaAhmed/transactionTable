@@ -39,7 +39,7 @@
                     label="Filter" 
                     icon="pi pi-check" 
                   ></p-button>
-                  <p-button class="col-2"
+                  <p-button class="col-2 ms-2"
                     (click)="clearFilter()"
                     label="Clear Filter"
                     styleClass="btn-secondary"
@@ -55,7 +55,7 @@
       <div class="col-md-12">
         <div class="card shadow-sm">
           <div class="card-header bg-success text-white">
-            <h2>Customer Transactions</h2>
+            <h2>Customers Transactions</h2>
           </div>
           <div class="card-body">
             <p-table [value]="customersWithTransactions" class="table table-striped table-hover">
@@ -80,6 +80,14 @@
                     </ul>
                   </td>
                   <td>${{ customer.totalTransactions }}</td>
+                </tr>
+              </ng-template>
+              <ng-template *ngIf="customersWithTransactions.length < 1">
+                <tr>
+                  <td colspan="99" class="table-nodata">
+                    <span class="svg-icon"></span>
+                    <p>No Data Found</p>
+                  </td>
                 </tr>
               </ng-template>
             </p-table>

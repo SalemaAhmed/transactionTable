@@ -32,17 +32,15 @@ export class TransactionListComponent {
   ngOnInit(): void {
     this.transactionService.getCustomers().subscribe(data => {
       this.customers = data;
-      console.log("customers",this.customers);
     });
     this.transactionService.getTransactions().subscribe(data => {
       this.transactions = data;
-      console.log("transactions",this.transactions);
       this.getCustomersWithTransactions();
     });
   }
   getCustomersWithTransactions(){
     this.customersWithTransactions = this.customers.map((customer: any) => {
-      const customerTransactions = this.transactions.filter((transaction: any) => transaction.customer_id.toString() === customer.id);
+      const customerTransactions = this.transactions.filter((transaction: any) => transaction.customer_id.toString() === customer.id.toString());
       const totalTransactions = customerTransactions.reduce((total: number, transaction: any) => total + transaction.amount, 0);
   
       return {
