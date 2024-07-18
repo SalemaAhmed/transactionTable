@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .input-wrapper {
+    width: 100%;
+  }
+  .bg-success {
+    --bs-bg-opacity: 1;
+    background-color: rgb(104 159 56) !important;
+}
+  .input-wrapper .p-inputnumber {
+    width: 100%;
+  }
+  p-inputnumber, .p-inputnumber {
+    display: flex;
+}
+  .card-header {
+    border-bottom: 2px solid #007bff;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 123, 255, 0.05);
+  }
+  
+  .badge {
+    font-size: 0.9rem;
+  }
+.card-header {
+    border-bottom: none;
+  }
+  
+  .card {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.5rem;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .card-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .list-unstyled li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .badge {
+    font-size: 0.875rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.25rem;
+  }
+  
+  .chart-height {
+    height: 400px; /* Adjust as needed */
+  }
+  
